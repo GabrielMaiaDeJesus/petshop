@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETSHOP</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+            <div class="Logo">
+            <h1>PET</h1> <img src ="/animal.png" src="img/tigre.png" alt="logo"> <h1>LIKE</h1>
+            </div> 
+
+            <div class="caixa-pesquisa">
+                <input class="pesquisa1" type="search" name="pesquisa" placeholder="O que você está pensando?"></i>
+                <button class="button-pesquisa1" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <nav>
+            <a href="Inicio">Inicio</a>
+            <a href="Catalogo">Catalogo</a>
+            <a href="Carrinho">Carrinho</a>
+            <a href="Conta">Conta</a>
+            </nav>
+    </header>
+
+    <div id="servicos">
+        <h2>Serviços</h2>
+        <div class="service-category">
+            <input type="radio" name="service-category" id="banho-tosa">
+            <label for="banho-tosa">
+                <h3>Banho e Tosa</h3>
+                <img src="/banho.png" alt class="icon-servicos">
+                <p>Contrate banho/tosa para o seu pet.</p>
+                <button class="buy-button">Agendar</button>
+            </label>
+        </div>
+        <div class="service-category">
+            <input type="radio" name="service-category" id="atendimento-veterinario">
+            <label for="atendimento-veterinario">
+                <h3>Atendimento Veterinário</h3>
+                <img src="/veterinario.png" alt class="icon-servicos">
+                <p>A saúde do seu pet esta em primeiro lugar!.</p>
+                <button class="buy-button">Agendar</button>
+            </label>
+        </div>
+        <div class="service-category">
+            <input type="radio" name="service-category" id="hospedagem">
+            <label for="hospedagem">
+                <h3>Hospedagem</h3>
+                <img src="/pousada.png" alt class="icon-servicos">
+                <p>Melhor hotel para seu cachorro, conforto e segurança você encontra aqui!.</p>
+                <button class="buy-button">Agendar</button>
+            </label>
+        </div>
+    </div>
+
+    <section id="produtos">
+        <h2>Produtos em estoque</h2>
+
+        <div class="product">
+            <img src="/cachorroracao.jpg" alt="Ração para Cães">
+            <p>Ração para cachorro R$20.00</p>
+            <button class="buy-button">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="/cachorroracao2.jpg" alt="Ração para Cães">
+            <p>Ração para cachorro R$ 15.00</p>
+            <button class="buy-button">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="/racaogato.jpg" alt="Ração para Gatos">
+            <p>Ração para Gatos R$25.00</p>
+            <button class="buy-button">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="/racaogato2.jpeg" alt="Ração para Gatos">
+            <p>Ração para Gatos R$20.00</p>
+            <button class="buy-button">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="/coleira.jpg" alt="Coleira">
+            <p>Coleira R$10.00</p>
+            <button class="buy-button">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="/brinquedo.jpg" alt="brinquedo para cachorro">
+            <p>brinquedo para seu PET R$99.99</p>
+            <button class="buy-button">Comprar</button>
+        </div>
+    </section>
+
+    <section id="depoimentos">
+        <h2>Feedback:</h2>
+        <div class="testimonial">
+            <img src="/biel.jpeg" alt="Foto de Gabriel Caetano" class="client-photo">
+            <div class="comment-bubble">
+                <p class="client-name">Marcos Silva</p>
+                <p class="client-comment">Muito bons produtos!</p>
+            </div>
+        </div>
+
+
+        <div class="testimonial">
+            <img src="/luan.jpg" alt="Foto de Luan Silva" class="client-photo">
+            <div class="comment-bubble">
+                <p class="client-name">Luan Alves</p>
+                <p class="client-comment">Adorei muito a tematica do site</p>
+            </div>
+        </div>
+
+
+        <div class="testimonial">
+            <img src="/maria.jpg" alt="Foto de Maria Alves" class="client-photo">
+            <div class="comment-bubble">
+                <p class="client-name">Joana Silva</p>
+                <p class="client-comment">Meu pet adorou os serviços oferecidos pelo Pet Like. Recomendo para todas minhas amigas!</p>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <img src="/lira.jpeg" alt="Foto de Lara Oliveira" class="client-photo">
+            <div class="comment-bubble">
+                <p class="client-name">Lucas Oliveira</p>
+                <p class="client-comment">Recomendo de mais otimo atendimento nota 10.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="post" id="contact-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                <li><a href="#" class="footer-link">Termos de Serviço</a></li>
+                <li><a href="#" class="footer-link">Mapa do Site</a></li>
+            </ul>
+        </nav>
+        <div id="social-media">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Twitter</a>
+        </div>
+    </footer>
